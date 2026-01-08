@@ -1,6 +1,18 @@
-# 🌐 Tor Bridges Auto-Collector & Tester
+# 🌐 Tor Bridges Tester
 
-This project is an automated tool designed to collect, test, and publish working Tor Bridges. The script runs every 6-12 hours, identifying active bridges from hundreds of sources and publishing them here and to the Telegram channel.
+This project is an automated tool designed to test and publish working Tor Bridges. The script runs every day, identifying active bridges and publishing them here and to the Telegram channel.
+
+---
+
+## 📢 Telegram Channel
+
+All final results are automatically compressed into a ZIP file and uploaded to our Telegram channel:
+
+🔹 **Main Channel:** [DeltaKroneckerFreedom](https://t.me/DeltaKroneckerFreedom)  
+
+---
+
+
 
 ## 🚀 Direct Download Links
 
@@ -9,19 +21,10 @@ You can always find the latest tested and working bridges using the links below:
 | Bridge Type | Status | Direct Download Link |
 | :--- | :---: | :--- |
 | **obfs4** | ✅ Active | [Download working_obfs4.txt](https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges/refs/heads/main/working_obfs4.txt) |
-| **WebTunnel** | ✅ Active | [Download working_webtunnel.txt](https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges/refs/heads/main/working_webtunnel.txt) |
 | **Vanilla** | ✅ Active | [Download working_vanilla.txt](https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges/refs/heads/main/working_vanilla.txt) |
+| **WebTunnel** | ✅ Active | [Download working_webtunnel.txt](https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges/refs/heads/main/working_webtunnel.txt) |
 
----
 
-## 📢 Telegram Channel & Bot Updates
-
-All final results are automatically compressed into a ZIP file and uploaded to our Telegram channel with a detailed health report (Total vs. Working counts):
-
-🔹 **Main Channel:** [DeltaKroneckerFreedom](https://t.me/DeltaKroneckerFreedom)  
-🤖 **Support Bot:** [ProtonConfigBot](https://t.me/ProtonConfigBot)
-
----
 
 ## 🛠 How It Works
 
