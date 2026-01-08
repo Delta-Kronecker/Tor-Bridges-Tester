@@ -1,35 +1,42 @@
-name: Tor Bridge Auto Update
+name: Tor Bridges Auto-Update
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *' # هر 6 ساعت
-  workflow_dispatch: # امکان اجرای دستی
+    - cron: '0 */12 * * *' # هر 12 ساعت اجرا می شود
 
 permissions:
-  contents: write # حل مشکل Error 403
+  contents: write
 
 jobs:
-  test_and_push:
+  update-bridges:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v4
+    
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+    - name: Install Dependencies
+      run: pip install requests tqdm
 
-      - name: Install dependencies
-        run: pip install requests
+    - name: Run Bridge Tester Script
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: python bridge_tester.py
 
-      - name: Run Script
-        run: python bridge_tester.py
-
-      - name: Commit and Push
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add *.txt
-          git commit -m "Update bridges: $(date)" || echo "No changes to commit"
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "GitHub Action Bot"
+        git config --global user.email "action@github.com"
+        
+        if [ -f "Tor_Bridges_Configs.zip" ]; then
+          git add *.txt Tor_Bridges_Configs.zip
+          git commit -m "🔄 Update Tor Bridges [$(date)]" || echo "No changes to commit"
           git push
+        else
+          echo "No ZIP file found to upload."
+        fi
