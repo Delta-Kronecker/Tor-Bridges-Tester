@@ -8,7 +8,7 @@ This project is an automated tool designed to test and publish working Tor Bridg
 
 All final results are automatically compressed into a ZIP file and uploaded to our Telegram channel:
 
-🔹 **Main Channel:** [DeltaKroneckerFreedom](https://t.me/DeltaKroneckerFreedom)  
+🔹 **Main Channel:** [DeltaKroneckerFreedom](https://t.me/GitKroneckerDelta)  
 
 ---
 
