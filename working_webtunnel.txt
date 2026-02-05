@@ -92,6 +92,7 @@ webtunnel [2001:db8:603:6e60:8f8b:5077:7cd3:7d3b]:443 E72CE4ACEEE2552F3104A728EC
 webtunnel [2001:db8:603c:2434:873c:4d58:9fd0:91e0]:443 56626E4B996EB1C9F4C0B573888E8EE3C4E28472 url=https://kriptohomyaki.org/4USXwPrEoemgJOXPmgjxPOAkQa1UG7To ver=0.0.2
 webtunnel [2001:db8:603c:2434:873c:4d58:9fd0:91e0]:443 56626E4B996EB1C9F4C0B573888E8EE3C4E28472 url=https://kriptohomyaki.org/4USXwPrEoemgJOXPmgjxPOAkQa1UG7To ver=0.0.3
 webtunnel [2001:db8:643c:34f7:f296:ce9f:fc39:7c42]:443 415F2F7017053333BB8AED35EFBF0C0ADF38D24C url=https://n.yogasku.ng/fuckputin8964tiananmenxjpnmsl ver=0.0.1
+webtunnel [2001:db8:692a:d46b:4a9b:a6e5:faf5:bf05]:443 7592622583CEAFA406D4C0AA69BB4CC948F5F7D3 url=https://www.papermoe.sbs/CiA0ijJotk3slKZBW6I6P2rQFgEEaF ver=0.0.2
 webtunnel [2001:db8:747d:f959:7714:e5ea:b6d8:66e7]:443 CF1827C41B504EB3CCF3D4EDE7D8D88761F2039E url=https://sp-sk.bitcdn.ovh/standbakhdown ver=0.0.3
 webtunnel [2001:db8:840a:a2c2:644c:3c92:be5e:7002]:443 3AC6EF6F292072B04D6AA07BBDBE7FBB32B2B4E0 url=https://miau.sillykittens.net/4incE0XB3Pm13wHctbckvfhP ver=0.0.3
 webtunnel [2001:db8:880a:108b:916e:70d9:1f77:d755]:443 933C998EC827D1C17CC93D1292BBC41735867CF8 url=https://wt.xoomlia.com/Lsd6ebydoA5t5JdXGLq71O2I ver=0.0.1
