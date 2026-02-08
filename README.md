@@ -37,11 +37,13 @@ You can always find the latest tested and working bridges using the links below:
 | **Vanilla** | ✅ Active | [Download working_vanilla.txt](https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges/refs/heads/main/working_vanilla.txt) |
 | **WebTunnel** | ✅ Active | [Download working_webtunnel.txt](https://raw.githubusercontent.com/Delta-Kronecker/Tor-Bridges/refs/heads/main/working_webtunnel.txt) |
 
-—چ---
 ---
+
 ## 🔥 Disclaimer
 This project is for educational purposes and Users are responsible for their own actions and compliance with local regulations.
+
 ---
+
 ## 🔥 Support This Project
 
 If you find this project useful, please consider supporting it:
@@ -53,4 +55,5 @@ If you find this project useful, please consider supporting it:
 Your support helps maintain and improve this service for everyone!
 
 ---
+
 **Maintained by Delta Kronecker**
