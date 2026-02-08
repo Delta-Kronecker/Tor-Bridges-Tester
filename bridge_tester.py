@@ -9,7 +9,6 @@ import random
 import zipfile
 from datetime import datetime
 
-# --- Configuration ---
 IS_GITHUB = os.getenv('GITHUB_ACTIONS') == 'true'
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
@@ -34,7 +33,6 @@ def test_bridge(bridge_line):
     try:
         if not bridge_line or len(bridge_line) < 8: return None
         
-        # تشخیص دقیق آدرس برای انواع پل
         if "obfs4" in bridge_line.lower():
             match = re.search(r'(\d{1,3}(?:\.\d{1,3}){3}:\d+)', bridge_line)
             addr = match.group(1) if match else None
@@ -42,7 +40,6 @@ def test_bridge(bridge_line):
             match = re.search(r'https://([^/:]+)(?::(\d+))?', bridge_line)
             addr = f"{match.group(1)}:{match.group(2) or 443}" if match else None
         else:
-            # Vanilla
             first_part = bridge_line.split()[0]
             addr = first_part if ":" in first_part else None
 
@@ -75,12 +72,11 @@ def main():
     generated_files = []
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    summary_report = f"🌐 *Tor Bridges Update Report*\n📅 Date: `{now}`\n\n"
+    summary_report = f"🌐 *Tor Bridges Teater Report*\n📅 Date: `{now}`\n\n"
     summary_report += f"{'Type':<12} | {'Total':<6} | {'Work'}\n"
     summary_report += f"{'-'*30}\n"
 
     for source in BRIDGE_SOURCES:
-        # در ویندوز فقط وانیلا
         if not IS_GITHUB and source['type'] != 'vanilla': continue
         
         try:
@@ -100,13 +96,14 @@ def main():
         
         generated_files.append(source['output_file'])
         
-        # افزودن به گزارش
         summary_report += f"{source['type'].upper():<12} | {len(bridges):<6} | {len(working_list)}\n"
 
     summary_report += f"{'-'*30}\n"
-    summary_report += f"⏱ Time: `{int(time.time() - start_time)}s`"
+    summary_report += f"⏱ Time: `{int(time.time() - start_time)}s`\n\n"
+    summary_report += "📌 *Note:* These bridges are tested from the scriptzteam/Tor-Bridges-Collector repository\n"
+    summary_report += "🔄 *Update Cycle:* This source updates slowly (may take months)\n"
+    summary_report += "🔍 *For Fresh Bridges:* Use the tor-bridge-collector file for new bridges"
 
-    # فشرده‌سازی
     zip_name = "Tor_Bridges_Configs.zip"
     with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for file in generated_files:
