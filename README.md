@@ -1,20 +1,33 @@
-# 🌐 Tor Bridges Tester
+# 🔥 Tor Bridges Tester
 
 This project is an automated tool designed to test and publish working Tor Bridges. The script runs every day, identifying active bridges and publishing them here and to the Telegram channel.
 
 ---
 
-## 📢 Telegram Channel
+## 🔥 Telegram Channel
 
 All final results are automatically compressed into a ZIP file and uploaded to our Telegram channel:
 
-🔹 **Main Channel:** [DeltaKroneckerFreedom](https://t.me/GitKroneckerDelta)  
+🔹 **Main Channel:** [DeltaKroneckerGithub](https://t.me/DeltaKroneckerGithub)
 
 ---
 
+## 🔥 About Bridge Sources
+
+This project tests bridges from [this](https://github.com/scriptzteam/Tor-Bridges-Collector) repository, which is:
+- A **very large archive** of various bridge types
+- **Slow to update** - may not change for months
+
+Despite the source's infrequent updates, daily testing remains valuable for:
+Maintaining a verified working list and healthy bridges show little variation between daily runs
 
 
-## 🚀 Direct Download Links
+**For fresh and new bridges**, please check our dedicated collection repository:
+ [Delta-Kronecker/Tor-Bridges-Collector](https://github.com/Delta-Kronecker/Tor-Bridges-Collector)
+
+---
+
+## 🔥 Direct Download Links
 
 You can always find the latest tested and working bridges using the links below:
 
@@ -26,24 +39,18 @@ You can always find the latest tested and working bridges using the links below:
 
 
 
-## 🛠 How It Works
+## 🔥 Disclaimer
+This project is for educational purposes and Users are responsible for their own actions and compliance with local regulations.
 
-1. **Fetch:** Retrieves the latest bridge lists from verified GitHub repositories.
-2. **Socket Testing:** Performs a multi-threaded connection test (Socket Check) on every single bridge to verify port availability.
-3. **Filtering:** Automatically removes dead, slow, or offline bridges.
-4. **Deployment:** Updates the `.txt` files in this repository and pushes the consolidated ZIP file to Telegram.
+## 🔥 Support This Project
 
-## ⚙️ Technical Features
+If you find this project useful, please consider supporting it:
 
-- **Multi-threading:** Tests up to 100 bridges simultaneously for maximum efficiency.
-- **GitHub Actions:** Fully automated workflow—no personal server required.
-- **Detailed Reporting:** Generates a real-time health rate report for each bridge type.
-- **Vanilla Support:** Specifically optimized to handle raw IP:Port Vanilla bridges.
+⭐ **Star the repository on GitHub:**
 
----
+⭐ **Add star reaction to posts in Telegram channel:** 
 
-## ⚠️ Disclaimer
-This project is for educational purposes and to facilitate free access to information. Users are responsible for their own actions and compliance with local regulations.
+Your support helps maintain and improve this service for everyone!
 
 ---
 **Maintained by Delta Kronecker**
