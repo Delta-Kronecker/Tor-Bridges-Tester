@@ -72,7 +72,7 @@ def main():
     generated_files = []
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    summary_report = f"🌐 *Tor Bridges Teater Report*\n📅 Date: `{now}`\n\n"
+    summary_report = f"🔥 *Tor Bridges Teater Report*\n🔥 Date: `{now}`\n\n"
     summary_report += f"{'Type':<12} | {'Total':<6} | {'Work'}\n"
     summary_report += f"{'-'*30}\n"
 
@@ -99,10 +99,9 @@ def main():
         summary_report += f"{source['type'].upper():<12} | {len(bridges):<6} | {len(working_list)}\n"
 
     summary_report += f"{'-'*30}\n"
-    summary_report += f"⏱ Time: `{int(time.time() - start_time)}s`\n\n"
-    summary_report += "📌 *Note:* These bridges are tested from the scriptzteam/Tor-Bridges-Collector repository\n"
-    summary_report += "🔄 *Update Cycle:* This source updates slowly (may take months)\n"
-    summary_report += "🔍 *For Fresh Bridges:* Use the tor-bridge-collector file for new bridges"
+    summary_report += "🔥 *Note:* These bridges are tested from the scriptzteam/Tor-Bridges-Collector repository\n\n"
+    summary_report += "🔥  The source updates slowly (may take months)\n\n"
+    summary_report += "🔥  Use the tor-bridge-collector file for new bridges"
 
     zip_name = "Tor_Bridges_Configs.zip"
     with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
