@@ -99,9 +99,9 @@ def main():
         summary_report += f"{source['type'].upper():<12} | {len(bridges):<6} | {len(working_list)}\n"
 
     summary_report += f"{'-'*30}\n"
-    summary_report += "🔥 *Note:* These bridges are tested from the scriptzteam/Tor-Bridges-Collector repository\n\n"
-    summary_report += "🔥  The source updates slowly (may take months)\n\n"
-    summary_report += "🔥  Use the tor-bridge-collector file for new bridges"
+    summary_report += "*Note:* These bridges are tested from the scriptzteam/Tor-Bridges-Collector repository\n\n"
+    summary_report += "The source updates slowly (may take months)\n\n"
+    summary_report += "Use the tor-bridge-collector file for new bridges"
 
     zip_name = "Tor_Bridges_Configs.zip"
     with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
