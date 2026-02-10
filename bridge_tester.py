@@ -72,7 +72,7 @@ def main():
     generated_files = []
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    summary_report = f"🔥 *Tor Bridges Teater Report*\n🔥 Date: `{now}`\n\n"
+    summary_report = f"*Tor Bridges Teater Report*\nDate: `{now}`\n\n"
     summary_report += f"{'Type':<12} | {'Total':<6} | {'Work'}\n"
     summary_report += f"{'-'*30}\n"
 
