@@ -103,7 +103,7 @@ def main():
     summary_report += "The source updates slowly (may take months)\n\n"
     summary_report += "Use the tor-bridge-collector file for new bridges"
 
-    zip_name = "Tor_Bridges_Configs.zip"
+    zip_name = "Tor-Bridges-Tester.zip"
     with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for file in generated_files:
             if os.path.exists(file):
