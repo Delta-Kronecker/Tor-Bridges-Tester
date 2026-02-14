@@ -33,7 +33,7 @@ jobs:
         git config --global user.name "GitHub Action Bot"
         git config --global user.email "action@github.com"
         
-        if [ -f "Tor_Bridges_Configs.zip" ]; then
+        if [ -f "Tor-Bridges-Tester.zip" ]; then
           git add *.txt Tor_Bridges_Configs.zip
           git commit -m "🔄 Update Tor Bridges [$(date)]" || echo "No changes to commit"
           git push
