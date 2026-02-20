@@ -8,7 +8,7 @@ This project is an automated tool designed to test and publish working Tor Bridg
 
 All final results are automatically compressed into a ZIP file and uploaded to our Telegram channel:
 
-🔹 **Main Channel:** [DeltaKroneckerGithub](https://t.me/DeltaKroneckerGithub)
+🔹 **Main Channel:** [Telegram Channel](https://t.me/DeltaKroneckerGithub)
 
 ---
 
@@ -50,7 +50,7 @@ If you find this project useful, please consider supporting it:
 
 ⭐ **Star the repository on GitHub**
 
-⭐ **Add star reaction to posts in Telegram channel** 
+⭐ **Add star reaction to posts in [Telegram Channel](https://t.me/DeltaKroneckerGithub)** 
 
 Your support helps maintain and improve this service for everyone!
 
