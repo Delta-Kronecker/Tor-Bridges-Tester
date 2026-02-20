@@ -44,16 +44,15 @@ This project is for educational purposes and Users are responsible for their own
 
 ---
 
-## 🔥 Support This Project
+## 🔥 Keep This Project Going!
 
-If you find this project useful, please consider supporting it:
+If you're finding this useful, please show your support:
 
 ⭐ **Star the repository on GitHub**
 
-⭐ **Add star reaction to posts in [Telegram Channel](https://t.me/DeltaKroneckerGithub)** 
+⭐ **Star our [Telegram posts](https://t.me/DeltaKroneckerGithub)** 
 
-Your support helps maintain and improve this service for everyone!
-
+Your stars fuel our motivation to keep improving!
 ---
 
 **Maintained by Delta Kronecker**
